@@ -1,3 +1,5 @@
+using NUnit.Framework.Internal;
+
 namespace Assignment3ParProgrammering;
 
 public class Tests
@@ -30,20 +32,21 @@ public class Tests
     [Test]
     public void TestGet()
     {
-        bs.getInt();
-        Assert.That();
+        Assert.That(bs.getInt() == 4);
     }
     
     [Test]
     public void TestRemove()
     {
-        Assert.Pass();
+        bs.removeInt();
+        Assert.That(bs.intList.Count == 2);
     }
     
     [Test]
     public void TestCount()
     {
-        Assert.Pass();
+        
+        Assert.That(bs.countInt() == 3);
     }
     
 }

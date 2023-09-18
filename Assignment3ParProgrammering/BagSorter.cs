@@ -11,16 +11,16 @@ public class BagSorter : BagSortInt
 
     public int getInt()
     {
-        throw new NotImplementedException();
+        return intList.Min();
     }
 
     public void removeInt()
     {
-        throw new NotImplementedException();
+        intList.Remove(intList.Min());
     }
 
     public int countInt()
     {
-        throw new NotImplementedException();
+        return intList.Count;
     }
 }
